@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WeatherVue</title>
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 id="header">WeatherVue</h1>
+
+        <div class="search-container">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" name="search" id="search" placeholder="search">
+        </div>
+        <div class="date-container">
+            <p id="date"></p>
+        </div>
+
+        <div class="img-container">
+            <img src="images/clear.png" alt="clear" id="weather-img">
+        </div>
+
+
+
+        <div class="temp-container">
+            <h1><span id="temp">22</span>&deg;c</h1>
+        </div>
+
+        <div class="city-container">
+            <h1 id="city">Kathmandu</h1>
+            <h1 class="error">Invalid City</h1>
+        </div>
+
+        <div class="w-c-container">
+            <div class="col">
+                <p><i class="fa-solid fa-temperature-full"></i></p>
+                <p><span id="max-temp">30</span>&deg;c</p>
+                <h4>Max Temp</h4>
+
+            </div>
+
+            <div class="col">
+                <p><i class="ri-water-percent-fill"></i></p>
+                <p><span id="humidity">30</span>%</p>
+                <h4>Humidity</h4>
+            </div>
+
+            <div class="col">
+                <p><i class="fa-solid fa-wind"></i></p>
+                <p><span id="wind">12</span> km/h</p>
+                <h4>Wind speed</h4>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="overlay-container">
+
+        <div class="overlay">
+            <h1 id="header" class="overlay-head">WeatherVue</h1>
+            <div class="img-container overlay-img">
+                <img src="images/cloud.png" alt="clear" id="weather-img">
+            </div>
+
+            <div class="wf-cont">
+                <h1>Weather</h1>
+                <p>Forecasts</p>
+            </div>
+
+            <div class="btn-container">
+                <button class="btn" onclick="showWeather()">Get Started</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
